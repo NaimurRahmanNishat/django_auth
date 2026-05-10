@@ -1,0 +1,82 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+myenv/
+
+# Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+
+# Django Media Files
+media/
+
+# Static Files
+staticfiles/
+
+# Environment Variables
+.env
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Coverage / Testing
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# Migrations Cache
+*/__pycache__/
+
+# Node Modules (if Next.js frontend exists)
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Build Files
+dist/
+build/
+
+# MySQL Dump Files
+*.sql
+
+# Secret Keys
+secret_key.txt
+
+# Temporary Files
+*.tmp
+*.swp
+
+# Python Packaging
+*.egg-info/
+.eggs/
+
+# dotenv
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
