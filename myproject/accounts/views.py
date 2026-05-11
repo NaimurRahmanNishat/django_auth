@@ -51,7 +51,8 @@ class LoginView(APIView):
 
         response = Response({
             'message': 'Login successful',
-            'user': UserSerializer(user).data
+            'user': UserSerializer(user).data,
+            'access_token': access_token
         })
 
         response.set_cookie(
