@@ -1,5 +1,5 @@
 from rest_framework_simplejwt.authentication import JWTAuthentication
-from rest_framework_simplejwt.exceptions import InvalidToken
+from rest_framework_simplejwt.exceptions import InvalidToken, AuthenticationFailed
 
 
 class CookieJWTAuthentication(JWTAuthentication):
@@ -19,4 +19,6 @@ class CookieJWTAuthentication(JWTAuthentication):
             return user, validated_token
 
         except InvalidToken:
+            raise AuthenticationFailed("Invalid access token")
+        except Exception:
             return None
